@@ -102,7 +102,7 @@ class _ExamplePageState extends State<ExamplePage> {
 
   _openSource() async {
     final url =
-        "https://github.com/whqfor/flutter_demo/lib/examples/${widget.pathToFile}";
+        "https://github.com/whqfor/flutter_demo/blob/main/lib/${widget.pathToFile}";
     if (await canLaunch(url)) {
       await launch(url);
     }
