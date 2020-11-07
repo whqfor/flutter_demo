@@ -12,6 +12,7 @@ import 'package:flutter_demo/widgets/home_page.dart';
 class AnimationDemos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('AnimationDemos build');
     return HomePage(
       title: 'Simple Animation Example',
       greetingWidget: GreetingText(category: 'Animation'),

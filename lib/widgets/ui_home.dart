@@ -13,6 +13,7 @@ class UIStack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('UIStack build');
     return HomePage(
       title: 'Simple UI Example',
       greetingWidget: GreetingText(category: 'UI'),

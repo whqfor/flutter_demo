@@ -9,6 +9,8 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
+// yaml中需引入 shimmer: 1.1.1
+
 abstract class SkeletonShimmer extends StatelessWidget {
   @factory
   Widget skeleton();

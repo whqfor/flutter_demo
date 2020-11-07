@@ -12,6 +12,7 @@ import 'package:flutter_demo/widgets/home_page.dart';
 class CodePieces extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('CodePieces build');
     return HomePage(
       title: 'Simple Code Example',
       greetingWidget: GreetingText(category: 'Code'),

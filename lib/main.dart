@@ -15,20 +15,9 @@ class FlutterDemo extends StatefulWidget {
 class _FlutterDemoState extends State<FlutterDemo> {
 
   int _currentIndex = 2;
-  Widget _currBody = AnimationDemos();
+  final List<Widget> tabItemBodies = [CodePieces(), UIStack(), AnimationDemos()];
 
   _onTap(int index) {
-    switch (index) {
-      case 0:
-        _currBody = CodePieces();
-        break;
-      case 1:
-        _currBody = UIStack();
-        break;
-      case 2:
-        _currBody = AnimationDemos();
-        break;
-    }
     setState(() {
       _currentIndex = index;
     });
@@ -52,7 +41,10 @@ class _FlutterDemoState extends State<FlutterDemo> {
           onTap: _onTap,
           currentIndex: _currentIndex,
         ),
-        body: _currBody,
+        body: IndexedStack(
+            index: _currentIndex,
+            children: tabItemBodies
+        ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.touch_app_outlined),
           onPressed: () {
