@@ -7,6 +7,7 @@
  */
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter_demo/animation/base_animations.dart';
 import 'package:flutter_demo/animation/skeleton.dart';
 
 
@@ -15,6 +16,9 @@ ExamplesConfiguration getAnimationExamplesConfiguration() {
 
   configuration.add(ExampleItem(
       name: "Skeleton", builder: (context) => SkeletonDemo()));
+
+  configuration.add(ExampleItem(
+      name: "AnimationFoo", builder: (context) => BaseAnimations()));
 
   return configuration;
 }

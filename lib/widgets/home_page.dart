@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
               Container(
                 height: 20,
               ),
-              Text("点击选取demo查看:", style: Theme.of(context).textTheme.body1),
+              Text("点击选取demo查看:", style: Theme.of(context).textTheme.bodyText2),
               Container(
                 height: 5,
               )
